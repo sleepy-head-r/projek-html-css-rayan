@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    margin-left: -8px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: #3c886e;
+    font-size: 18px;
+    justify-items: space-around;
+
+}
+
+.navbar-container .navlist li:hover a{
+    color: #e8dcbf;
+    transition: all 0.3s ease;
+}
+
+nav .logo img {
+    display: flex;
+    justify-content: left;
+    margin-inline: 60px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+
+}
+
+/* END NAVIGATION BAR */
+
+/* BODY */
+
+body {
+    font-family: 'Poppins' ,sans-serif;
+    background-color : #e8dcbf;
+    font-size: 19px;
+}
+
+main {
+    width: 100%;
+    padding: 40px;
+    
+}
+
+
+/* CONTENT1 (PROFIL) */
+
+#profile {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#profile .titleprofile {
+    font-size: 50;
+    justify-content: left;
+    display: flex;
+    flex: 1;
+    padding-left: 40;
+}
+
+#profile .paragrafprofile {
+    display: flex;
+    flex: 1;
+    padding: 40;
+}
+
+/* CONTENT2 (ORIGIN) */
+
+#shadowcontent2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#asal {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40;
+}
+
+#asal .titleasal {
+    font-size: 50;
+    justify-content: left;
+    display: flex;
+    flex: 1;
+    padding-left: 40px;
+}
+
+#asal .paragrafasal {
+    display: flex;
+    flex: 1;
+    padding-left: 40;
+    justify-content: left;
+    padding-right: 40;
+}
+
+#asal .image_asal {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+}
+
+#asal .image_asal img {
+    width: 450px;
+}
+
+/* CONTENT2 (ORIGIN) END */
+
+/* SLIDER (ORIGIN&ACTIVITY */
+
+.slideshow { 
+    max-width: 1000px;
+    position: relative;
+    bottom: 0;
+    margin: auto; 
+    z-index: 1;
+}
+
+.prev, .next { 
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    width: auto; 
+    margin-top: -22px; 
+    padding: 16px; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 18px; 
+    transition: 0.6s ease; 
+    border-radius: 0 3px 3px 0; 
+    user-select: none; 
+}
+.next { 
+    right: 0; 
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover { 
+    background-color: rgba(0,0,0,0.8);
+} 
+
+.text { 
+    color: #ffffff; 
+    text-shadow: black;
+    font-size: 15px; 
+    padding: 8px 12px; 
+    position: absolute; 
+    bottom: 8px; 
+    width: 100%; 
+    text-align: center; 
+}
+
+.fade { 
+        animation-name: fade;
+        animation-duration: 1.5s; 
+} 
+
+@keyframes fade { 
+    from {
+        opacity: .4
+    }
+     to {
+        opacity: 1
+    } 
+}
+
+
+/* CONTENT3 (ACTIVITY) */
+
+#shadowcontent3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#aktivitas {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+    margin-bottom: 40;
+
+}
+
+#aktivitas .titleactivity {
+    font-size: 50;
+    display: flex;
+    flex: 1;
+    padding-left: 40;
+}
+
+#aktivitas .paragrafactivity {
+    display: flex;
+    flex: 1;
+    padding-left: 40;
+
+}
+
+#aktivitas .imageaktivitas {
+    display: flex;
+    flex: 1;
+}
+
+#sectionactivity {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#sectionactivity .captionactivity {
+    display: flex;
+
+}
+
+/* CONTENT3 (ACTIVITY) END */
+
+/* ASIDE */
+
+#content1tambahaside {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+}
+
+aside {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.imageaside {
+    display: flex;
+    flex: 1;
+    padding: 15px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+/* ASIDE END */
+
+/* BODY END */
+
+/* FOOTER */
+
+footer {
+    font-size: 16px;
+    background-color: #24574b;
+    padding: 8px;
+    color: white;
+    margin-inline: -8px;
+    margin-bottom: -8px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 8px;
+
+}
+
+footer .footerlist {   
+    list-style-type: none;
+    margin-top: 4px;
+    margin-bottom: -8px;
+    opacity: 80%;
+    padding-left: 1px;
+}    
+
+footer .footerparagraf {
+    font-size: 11px;
+    opacity: 70%;
+}
+
+footer .footervisit {
+    font-size: 11px;
+    opacity: 70%;
+    margin-bottom: -4px;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+
+footer .footerlist li:hover i{
+    opacity: 50%;
+    transition: all 0.3s ease;
+}
+
+/* FOOTER END */
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1200px) {
+
+    main {
+        font-size: 19px;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        font-size: 20px;
+    }
+    
+    .navbar-container .logo {
+        margin-right: 1.6rem;
+        margin-top: 1.6rem;
+        margin-bottom: -1.6rem;
+    }
+
+    #profile {
+        flex-flow: column ;
+        align-items: center;
+        margin-top: 130px;
+    }
+
+    #profile .profilimage {
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #profile .titleprofile {
+    font-size: 50;
+    justify-content: left;
+    display: flex;
+    }
+
+    #profile .paragrafprofile {
+    display: flex;
+    flex: 1;
+    padding: 40;
+    }
+
+    .tableprofil {
+        font-size: 21px;
+    }
+
+    #content1tambahaside {
+        flex-flow: column;
+        align-items: center;
+
+    }
+
+    aside {
+        margin-top: 0px;
+    }
+
+    #asal {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    #aktivitas {
+        flex-flow: column;
+        align-items: center;
+    }
+
+  }
+  
